@@ -10,7 +10,15 @@
 
 <body <?php body_class(); ?>>
 <header class="header">
-ヘッダー
+これはヘッダーです
+
+    <!-- ナビメニューを表示 -->
+    <?php wp_nav_menu(
+        array(
+            'menu'  => 'pc_menu',
+            'menu_class' => 'nav navbar-nav',
+        )
+    ); ?>
 
 
 </header>
