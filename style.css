@@ -5,19 +5,51 @@
  Version:      1.0.0
 */
 
-/* 全体のページに適用されるCSS */
 
+/* 全体のページに適用されるCSS */
 html {
     /* このサイズが基準　フォントサイズをemで指定する */
-    font-size: 15px;
+    font-size: 16px;
+}
+body {
+    min-width:960px;
+}
+.main {
+    /* 仮の高さ */
+    height: 1500px;
+}
+.container {
+    width:960px;
+    margin: 0 auto;
+}
+.flex {
+    display:flex;
 }
 
 /* サイトのテーマカラーをここで設定する */
-.bg_yellow {
-    background: #;
-}
-.black {
-    color: #;
-}
+.bg-yel {background-color: #FFDE05;}
+.bg-wht {background-color: #fff;}
+.bg-gry {background-color: #eee;}
+.fc-bk {color: #333;}
+.fc-wht {color: #fff;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* アイキャッチ */
+.hero-img {
+    height: 500px;
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+}
 
