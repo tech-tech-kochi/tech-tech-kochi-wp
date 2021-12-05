@@ -28,12 +28,30 @@ body {
     display:flex;
 }
 
+/* 固定ページ共通 */
+.page-title-container {
+    background: gray;       /* あとで画像を入れる */
+}
+.page-title {
+    line-height: 300px;
+    text-align: center;
+    font-weight: 700;
+}
+.border {
+    border-bottom: solid 1px;
+    border-color: #555555;
+    margin: 30px 0;
+}
+
 /* サイトのテーマカラーをここで設定する */
 .bg-yel {background-color: #FFDE05;}
 .bg-wht {background-color: #fff;}
 .bg-gry {background-color: #eee;}
 .fc-bk {color: #333;}
 .fc-wht {color: #fff;}
+.fc-gry {color: #555555;}
+
+.fs-32px {font-size: 32px;}
 
 
 
