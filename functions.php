@@ -14,4 +14,4 @@ add_action('wp_enqueue_scripts','read_css');
 
 
 // 画面上のmargin-top消す
-add_filter("show_admin_bar", "__return_false");
+// add_filter("show_admin_bar", "__return_false");
