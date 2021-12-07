@@ -20,6 +20,10 @@ function read_css() {
     if (is_page("活動内容")) {
         wp_enqueue_style( 'page-activity', get_template_directory_uri() . '/css/page-activity.css', array('destyle') );
     }
+    // 問い合わせページ（page-activity.php用）
+    if (is_page("お問い合わせ")) {
+        wp_enqueue_style( 'page-contact', get_template_directory_uri() . '/css/page-contact.css', array('destyle') );
+    }
 
 
 
