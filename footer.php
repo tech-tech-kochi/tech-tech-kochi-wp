@@ -1,17 +1,20 @@
-
-<footer class="bg-gry"></footer>
-
-</body>
-
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head(); ?>
+</head>
 <style>
      li {
         display: inline;
         margin-right: 20px;
     }
-    a {
+    menu-item  {
         position: relative;
     }
-    a::after {
+    menu-item ::after {
         position: absolute;
         bottom: -4px;
         left: 0;
@@ -23,35 +26,34 @@
         transform-origin: left top;
         transition: transform .3s;
     }
-    a:hover::after {
+    menu-item :hover::after {
         transform: scale(1, 1);
     }
    .footer {
-       padding: 10px;
+       padding: 60px 20px;
    }
-   /* .footer a{
-       padding:10px;
+   .logo {
+       padding-right: 30px;
    }
-   .footer li{
-       padding:10px;
-   } */
-
+   .copyright-text {
+       font-size: 10px;
+       padding-top: 20px;
+   }
 </style>
 
-<footer class="footer bg-gry flex">
-<div class="container flex">
-
-    <a href="<?php echo home_url( '/' ); ?>">TECH-TECH KOCHI</a>
-
-
-    <!-- ナビメニューを表示 -->
-    <?php wp_nav_menu(
-        array(
-            'menu'  => 'pc_menu',
-            'menu_class' => 'nav navbar-nav',
-        )
-    ); ?>
-
-</div>
-</footer>
+    <footer class="footer bg-gry">
+        <div class="flex">
+            <a href="<?php echo home_url( '/' ); ?>" class="logo">TECH-TECH KOCHI</a>
+            <!-- ナビメニューを表示 -->
+            <?php wp_nav_menu(
+                array(
+                    'menu'  => 'pc_menu',
+                    'menu_class' => 'nav navbar-nav fs-14px',
+                )
+            ); ?>
+        </div>
+        <p class="copyright-text">Copyright © 2021 TECH-TECH KOCHI All Rights Reserved.</p>
+    </footer>
+<?php wp_footer() ?>
+</body>
 </html>
