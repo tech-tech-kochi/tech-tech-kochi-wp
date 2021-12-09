@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
     <?php wp_head(); ?>
 </head>
 <style>
@@ -35,12 +34,9 @@
         justify-content: space-between;
     }
 </style>
-
 <body <?php body_class(); ?>>
     <header class="header bg-yel flex">
         <a href="<?php echo home_url( '/' ); ?>">TECH-TECH KOCHI</a>
-
-
         <!-- ナビメニューを表示 -->
         <?php wp_nav_menu(
             array(
