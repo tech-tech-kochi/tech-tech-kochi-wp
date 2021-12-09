@@ -12,6 +12,7 @@ html {
     /* このサイズが基準　フォントサイズをemで指定する */
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 16px;
+    color: #333;
 }
 body {
     min-width:960px;
@@ -52,10 +53,7 @@ body {
 .fc-gry {color: #555555;}
 
 .fs-32px {font-size: 32px;}
-
-
-
-
+.fs-14px {font-size: 14px;}
 
 
 
