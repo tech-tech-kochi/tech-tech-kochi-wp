@@ -21,7 +21,7 @@ Template Name: お問い合わせ
             </div>
 
             <div class="form-item flex">
-                <p class="form-item-label"><span class="form-item-label-required fc-wht">必須</span>電話番号</p>
+                <p class="form-item-label"><span class="form-item-label-any fc-wht">任意</span>電話番号</p>
                 <input type="text" class="form-item-input" placeholder="例）000-0000-0000">
             </div>
 
@@ -33,7 +33,7 @@ Template Name: お問い合わせ
             <div class="form-item flex">
                 <p class="form-item-label"><span class="form-item-label-required fc-wht">必須</span>件名</p>
                 <select class="form-item-input" name="件名">
-                    <option value="">選択してください</option>
+                    <option value="">-- 選択してください --</option>
                     <option value="メンバー募集について">メンバー募集について</option>
                     <option value="勉強会について">勉強会について</option>
                     <option value="お仕事のご依頼について">お仕事のご依頼について</option>

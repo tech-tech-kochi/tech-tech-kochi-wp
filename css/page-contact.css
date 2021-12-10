@@ -50,7 +50,8 @@
     width: 48px;
     display: inline-block;
     text-align: center;
-    background: gray;
+    border: solid 2px gray;
+    color: #333;
     font-size: 0.8em;
 }
 .form-item-input {
@@ -64,20 +65,19 @@
     width: 100%;
     max-width: 410px;
     background: #eaedf2;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 .form-item-textarea {
     border: 1px solid #ddd;
     border-radius: 6px;
     margin-left: 40px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     height: 216px;
     flex: 1;
     width: 100%;
     max-width: 410px;
     background: #eaedf2;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .form-btn {
     border-radius: 6px;
