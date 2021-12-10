@@ -11,6 +11,7 @@
 html {
     /* このサイズが基準　フォントサイズをemで指定する */
     font-family: 'M PLUS 1p', sans-serif;
+    /* font-family: 'Noto Sans JP'; */
     font-size: 16px;
     color: #333;
 }
@@ -59,7 +60,13 @@ body {
 
 
 
+/* トップページ */
 
+.contents-title {
+    font-size: 4em;
+    font-weight: bold;
+
+}
 
 
 
@@ -67,7 +74,10 @@ body {
 .hero-img {
     height: 500px;
     font-weight: bold;
-    font-size: 4em;
-    text-align: center;
+    font-size: 8em;
+    text-align: left;
+    padding-top: 100px;
+    text-decoration:underline;
+
 }
 
