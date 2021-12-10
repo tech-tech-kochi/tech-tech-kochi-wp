@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php wp_head(); ?>
-</head>
 <style>
      li {
         display: inline;
@@ -40,7 +32,6 @@
        padding-top: 20px;
    }
 </style>
-
     <footer class="footer bg-gry">
         <div class="flex">
             <a href="<?php echo home_url( '/' ); ?>" class="logo">TECH-TECH KOCHI</a>
@@ -54,6 +45,6 @@
         </div>
         <p class="copyright-text">Copyright © 2021 TECH-TECH KOCHI All Rights Reserved.</p>
     </footer>
-<?php wp_footer() ?>
+    <?php wp_footer() ?>
 </body>
 </html>

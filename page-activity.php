@@ -3,17 +3,7 @@
 Template Name: 活動内容
 */
 ?>
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>活動内容について</title>
-    <?php wp_head(); ?>
-</head>
-<body>
-    <?php get_header(); ?>
+<?php get_header(); ?>
     <div class="page-title-container">
         <p class="page-title fc-wht fs-32px">活動内容</p>
     </div>
@@ -56,7 +46,4 @@ Template Name: 活動内容
             サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
         </p>
     </div> 
-    <?php get_footer(); ?>
-    <?php wp_footer() ?>
-</body>
-</html>
+<?php get_footer(); ?>
