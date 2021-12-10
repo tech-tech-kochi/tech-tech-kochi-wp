@@ -10,7 +10,7 @@
 /* 全体のページに適用されるCSS */
 html {
     /* このサイズが基準　フォントサイズをemで指定する */
-    font-family: 'M PLUS 1p', sans-serif;
+    /* font-family: 'M PLUS 1p', sans-serif; */
     /* font-family: 'Noto Sans JP'; */
     font-size: 16px;
     color: #333;
@@ -19,8 +19,7 @@ body {
     min-width:960px;
 }
 .main {
-    /* 仮の高さ */
-    height: 1500px;
+
 }
 .container {
     width:960px;
@@ -64,10 +63,14 @@ body {
 
 .contents-title {
     font-size: 4em;
-    font-weight: bold;
+    margin-bottom: 20px;
+    font-weight:bold;
 
 }
 
+.main p {
+    font-weight:bold;
+}
 
 
 /* アイキャッチ */
@@ -81,3 +84,27 @@ body {
 
 }
 
+.main-contents {
+    margin-bottom: 100px;
+}
+
+.read-more {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* メインコンタクト */
+
+.main-contact {
+    margin: 0 auto;
+    padding: 50px 0;
+    border-top: #333 1px solid;
+    width: 80%;
+}
+.main-contact h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+}
