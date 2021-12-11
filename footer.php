@@ -1,12 +1,17 @@
 <style>
-     li {
+    .footer {
+        width: 95%;
+        margin: 0 auto;
+        padding: 60px 0;
+   }
+    li {
         display: inline;
         margin-right: 20px;
     }
-    menu-item  {
+    .menu-item  {
         position: relative;
     }
-    menu-item ::after {
+    .menu-item ::after {
         position: absolute;
         bottom: -4px;
         left: 0;
@@ -18,12 +23,9 @@
         transform-origin: left top;
         transition: transform .3s;
     }
-    menu-item :hover::after {
+    .menu-item :hover::after {
         transform: scale(1, 1);
     }
-   .footer {
-       padding: 60px 20px;
-   }
    .logo {
        padding-right: 30px;
    }
@@ -32,7 +34,7 @@
        padding-top: 20px;
    }
 </style>
-    <footer class="footer bg-gry">
+    <footer class="footer bg-wht">
         <div class="flex">
             <a href="<?php echo home_url( '/' ); ?>" class="logo">TECH-TECH KOCHI</a>
             <!-- ナビメニューを表示 -->
