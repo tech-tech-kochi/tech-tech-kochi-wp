@@ -47,11 +47,15 @@ function add_custom_post_type() {
             "public" => true,
             "has_archive" => true,
             "menu_position" => 4,
-            "menu_icon" => "dashicons-edit"
+            "menu_icon" => "dashicons-edit",
+            'supports' => array('title','editor','thumbnail')
         )
     );
 }
 add_action('init', 'add_custom_post_type');
+
+// 投稿画面でアイキャッチ画像を有効にする。
+add_theme_support('post-thumbnails');
 
 
 // 投稿一覧・NEWS（アーカイブ）の追加
