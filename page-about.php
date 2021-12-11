@@ -6,7 +6,7 @@ Template Name: コミュニティについて
 <?php get_header(); ?>
 <div class="main">
     <div class="page-title-container">
-        <p class="page-title fc-wht fs-32px">コミュニティについて</p>
+        <p class="page-title fc-wht fs-32px">ABOUT</p>
     </div>
     <div class="content-container">
         <p class="content-title fs-32px">

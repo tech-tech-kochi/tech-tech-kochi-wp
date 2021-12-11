@@ -25,7 +25,10 @@
 </style>
 <?php get_header(); ?>
 <main class="main">
-    <div class="content content-container bg-yel flex">
+    <div class="page-title-container">  
+        <p class="page-title fc-wht fs-32px">MEMBER</p>
+    </div>
+    <div class="content content-container flex">
         <?php $args = array(
         'post_type' => 'member' //カスタム投稿で作成した投稿タイプ
         );

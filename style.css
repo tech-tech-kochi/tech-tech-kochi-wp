@@ -19,7 +19,8 @@ body {
     min-width:960px;
 }
 .main {
-
+    width: 95%;
+    margin : 0 auto;
 }
 .container {
     width:960px;
@@ -53,6 +54,7 @@ body {
 .fc-gry {color: #555555;}
 
 .fs-32px {font-size: 32px;}
+.fs-20px {font-size: 20px;}
 .fs-14px {font-size: 14px;}
 
 
