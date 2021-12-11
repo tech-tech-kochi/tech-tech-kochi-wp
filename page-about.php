@@ -4,6 +4,7 @@ Template Name: コミュニティについて
 */
 ?>
 <?php get_header(); ?>
+<div class="main">
     <div class="page-title-container">
         <p class="page-title fc-wht fs-32px">コミュニティについて</p>
     </div>
@@ -33,4 +34,5 @@ Template Name: コミュニティについて
             サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
         </p>
     </div>
+</div>
 <?php get_footer(); ?>

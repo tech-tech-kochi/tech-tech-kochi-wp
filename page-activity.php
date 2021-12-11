@@ -4,6 +4,7 @@ Template Name: 活動内容
 */
 ?>
 <?php get_header(); ?>
+<div class="main">
     <div class="page-title-container">
         <p class="page-title fc-wht fs-32px">活動内容</p>
     </div>
@@ -46,4 +47,5 @@ Template Name: 活動内容
             サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
         </p>
     </div> 
+</div>
 <?php get_footer(); ?>
