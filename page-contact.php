@@ -7,7 +7,7 @@ Template Name: お問い合わせ
 <?php get_header(); ?>
 <main class="main">
     <div class="page-title-container">
-        <h2 class="page-title fc-wht fs-32px">CONTACT</h2>
+        <h2 class="page-title fc-wht fs-32px"><?php the_title(); ?></h2>
     </div>
     <div class="container">
         <div class="form">
