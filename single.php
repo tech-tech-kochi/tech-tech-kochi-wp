@@ -1,34 +1,48 @@
+<style>
+    .content-container {
+        width: 60%;
+        margin: 80px auto;
+    }
+    .single-post-container {
+        margin: 50px 0;
+    }
+    .single-date {
+        margin-right: 20px;
+    }
+    .single-title {
+        margin: 20px 0;
+    }
+    .single-text {
+        margin: 50px 0 70px 0;
+    }
+    .back-button {
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+</style>
 <?php get_header(); ?>
 <!-- 記事ページ -->
-<section class="main_post">
-    <div class="main_post_wrap">
-         <div class="single_post_container">
+<div class="main">
+    <div class="page-title-container">
+        <p class="page-title fc-wht fs-32px">NEWS</p>
+    </div>
+    <div class="content-container ">
+         <div class="single-post-container">
            <?php if (have_posts()) : ?>
-           <?php while (have_posts()) : the_post(); ?>
-            <div class="post_meta">
-                <!-- 日付 -->
-                <p class="post_time"><?php the_time( get_option( 'date_format' ) ); ?></p>
-                <!-- カテゴリー -->
-                <p class="post_cat"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></p>
-            </div>
-            <!— 記事のタイトル —>
-            <h1 class="single_ttl"><?php the_title(); ?></h1>
-            <article class="detail_text">
-                <!-- アイキャッチ画像 -->
-                <p class="single_thumb"><?php if(has_post_thumbnail()) { the_post_thumbnail(); } ?></p>
-                <!-- 記事の本文 -->
-                <div class="post_body"><?php the_content();?></div>
-            </article>
-
-            <?php endwhile; ?>
-            
+                <?php while (have_posts()) : the_post(); ?>
+                    <div class="flex">
+                        <p class="single-date"><?php the_time('Y.m.d'); ?></p>
+                        <p class="single-category"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></p>
+                    </div>
+                    <h1 class="single-title fs-32px"><?php the_title(); ?></h1>
+                    <div class="single-text"><?php the_content();?></div>
+                <?php endwhile; ?>
             <?php else : ?>
                 <div>記事が存在していないです。</div>
             <?php endif; ?>
-
          </div>
-         <!-- サイトバー -->
-        <?php get_sidebar(); ?>
+         <a href="<?php bloginfo('url'); ?>/news/" class="back-button">BACK</a>
     </div>
-</section>
+</div>
 <?php get_footer(); ?>
