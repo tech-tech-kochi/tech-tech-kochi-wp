@@ -22,6 +22,7 @@
     .member-name {
         margin: 20px 0 10px 0;
     }
+    
 </style>
 <?php get_header(); ?>
 <main class="main">
