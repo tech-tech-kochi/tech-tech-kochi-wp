@@ -31,7 +31,8 @@
     </div>
     <div class="content content-container flex">
         <?php $args = array(
-        'post_type' => 'member' //カスタム投稿で作成した投稿タイプ
+        'post_type' => 'member', //カスタム投稿で作成した投稿タイプ
+        'posts_per_page' => -1,
         );
         $customPosts = get_posts($args);
         if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );

@@ -8,16 +8,19 @@
 </head>
 <style>
     .header-bg {
-        height: 78.39px;
+        height: 90px;
     }
     .header {
-        padding: 30px;
+        padding: 20px;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.8);
         position: fixed;/*ヘッダーを固定*/
         z-index: 9999;/*一番前に表示されるように設定*/
         top: 0;/*画面一番上で固定*/
         width: 100%;/*ヘッダーが横幅いっぱいになるように指定*/
+    }
+    .menu-pc_menu-container{
+        padding: 15px 0;
     }
     .menu-item {
         display: inline;
@@ -41,11 +44,16 @@
     .menu-item:hover::after {
         transform: scale(1, 1);
     }
+    .logo-img {
+        width: 250px;
+    }
 </style>
 <body <?php body_class(); ?>>
     <div class="header-bg bg-wht"></div>
     <header class="header flex">
-        <a href="<?php echo home_url( '/' ); ?>">TECH-TECH KOCHI</a>
+        <a href="<?php echo home_url( '/' ); ?>">
+            <img src="<?php header_image(); ?>" class="logo-img">
+        </a>
         <!-- ナビメニューを表示 -->
         <?php wp_nav_menu(
             array(
