@@ -27,7 +27,7 @@
         transform: scale(1, 1);
     }
    .logo {
-       padding-right: 30px;
+       padding: 15px 30px 0 0;
    }
    .copyright-text {
        font-size: 10px;
