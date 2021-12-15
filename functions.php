@@ -54,6 +54,19 @@ function add_custom_post_type() {
 }
 add_action('init', 'add_custom_post_type');
 
+// カスタム投稿のカテゴリー追加
+function create_category_taxonomy(){
+    register_taxonomy( 'members_category', 'member', array(
+        'label' => 'タグ',
+        'show_ui' => 'true',
+        'hierarchical' => 'true',
+    ));
+}
+add_action('init', 'create_category_taxonomy');
+
+
+
+
 // 投稿画面でアイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
 
