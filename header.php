@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
     <?php wp_head(); ?>
 </head>
 <style>
+    .header-bg {
+        height: 90px;
+    }
+    .header {
+        padding: 20px;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.8);
+        position: fixed;/*ヘッダーを固定*/
+        z-index: 9999;/*一番前に表示されるように設定*/
+        top: 0;/*画面一番上で固定*/
+        width: 100%;/*ヘッダーが横幅いっぱいになるように指定*/
+    }
+    .menu-pc_menu-container{
+        padding: 15px 0;
+    }
     .menu-item {
         display: inline;
         margin-right: 20px;
@@ -30,17 +44,16 @@
     .menu-item:hover::after {
         transform: scale(1, 1);
     }
-    .header {
-        padding: 30px;
-        justify-content: space-between;
+    .logo-img {
+        width: 250px;
     }
 </style>
-
 <body <?php body_class(); ?>>
-    <header class="header bg-yel flex">
-        <a href="<?php echo home_url( '/' ); ?>">TECH-TECH KOCHI</a>
-
-
+    <div class="header-bg bg-wht"></div>
+    <header class="header flex">
+        <a href="<?php echo home_url( '/' ); ?>">
+            <img src="<?php header_image(); ?>" class="logo-img">
+        </a>
         <!-- ナビメニューを表示 -->
         <?php wp_nav_menu(
             array(
@@ -49,7 +62,3 @@
             )
         ); ?>
     </header>
-    <?php wp_footer() ?>
-</body>
-</html>
-

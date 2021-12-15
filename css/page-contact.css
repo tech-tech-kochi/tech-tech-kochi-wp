@@ -2,3 +2,162 @@
 
 
 
+
+.form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+.form-item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    align-items: center;
+}
+.form-item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+}
+.form-item-label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.form-item-label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+.form-item-label-required {
+    border-radius: 6px;
+    margin-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    font-size: 0.8em;
+}
+
+.form-item-label-any {
+    border-radius: 6px;
+    margin-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    border: solid 2px gray;
+    color: #333;
+    font-size: 0.8em;
+}
+.form-item-input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 1em;
+}
+.form-item-textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 1em;
+}
+.form-btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 150px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #5bc8ac;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+/* レスポンシブ（スマホ用） */
+@media screen and (max-width: 600px) {
+    .form {
+        margin-top: 40px;
+    }
+    .form-item {
+        /* padding: 16px 14px; */
+        /* padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px; */
+        flex-wrap: wrap;
+    }
+    .form-item-label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    .form-item-label.isMsg {
+        margin-top: 0;
+    }
+    .form-item-label-required {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 0.7em;
+    }
+    .form-item-label-any {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 0.7em;
+    }
+    .form-item-input {
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+        font-size: 0.9em;
+    }
+    .form-item-textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+        font-size: 0.9em;
+    }
+    .form-btn {
+        margin-top: 24px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 160px;
+        font-size: 1em;
+    }
+}
+
+

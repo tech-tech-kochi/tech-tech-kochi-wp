@@ -3,25 +3,62 @@
 Template Name: お問い合わせ
 */
 ?>
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>活動内容について</title>
-    <?php wp_head(); ?>
-</head>
-<style>
-</style>
-<body>
-    <?php get_header(); ?>
+
+<?php get_header(); ?>
+<main class="main">
     <div class="page-title-container">
-        <p class="page-title fc-wht fs-32px">お問い合わせ</p>
+        <h2 class="page-title fc-wht fs-32px"><?php the_title(); ?></h2>
+    </div>
+    <div class="container">
+        <div class="form">
+            <div class="form-item flex">
+                <p class="form-item-label"><span class="form-item-label-required fc-wht">必須</span>氏名</p>
+                <input type="text" class="form-item-input" placeholder="例）テクテク太郎">
+            </div>
+            <div class="form-item flex">
+                <p class="form-item-label"><span class="form-item-label-any fc-wht">任意</span>会社名</p>
+                <input type="text" class="form-item-input" placeholder="例）株式会社テクテク高知">
+            </div>
+
+            <div class="form-item flex">
+                <p class="form-item-label"><span class="form-item-label-any fc-wht">任意</span>電話番号</p>
+                <input type="text" class="form-item-input" placeholder="例）000-0000-0000">
+            </div>
+
+            <div class="form-item flex">
+                <p class="form-item-label"><span class="form-item-label-required fc-wht">必須</span>メールアドレス</p>
+                <input type="email" class="form-item-input" placeholder="例）example@gmail.com">
+            </div>
+
+            <div class="form-item flex">
+                <p class="form-item-label"><span class="form-item-label-required fc-wht">必須</span>件名</p>
+                <select class="form-item-input" name="件名">
+                    <option value="">-- 選択してください --</option>
+                    <option value="メンバー募集について">メンバー募集について</option>
+                    <option value="勉強会について">勉強会について</option>
+                    <option value="お仕事のご依頼について">お仕事のご依頼について</option>
+                    <option value="メンバーのスカウト">メンバーのスカウト</option>
+                    <option value="その他">その他</option>
+                </select>    
+            </div>
+
+            <div class="form-item flex">
+                <p class="form-item-label isMsg"><span class="form-item-label-required fc-wht">必須</span>お問い合わせ内容</p>
+                <textarea class="form-item-textarea"></textarea>
+            </div>
+            <input type="submit" class="form-btn" value="送信する >>">
+        </div>
+
     </div>
 
-    これはお問い合わせページです。
-    <?php get_footer(); ?>
-    <?php wp_footer() ?>
-</body>
-</html>
+
+</main>
+
+
+
+
+
+
+
+
+<?php get_footer(); ?>
