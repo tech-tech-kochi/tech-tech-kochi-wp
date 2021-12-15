@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
-<body>
+<div class="main bg-yel">
 <h1>404</h1>
 <h1>not found</h1>
-<p>さーせん。このページは存在しないみたいですね。</p>
-<p>（あ、エラー画面は存在しますよ！）</p>
-</body>
-
+<p class="error">さーせん。このページは存在しないみたいですね。</p>
+<p class="error">（あ、エラー画面は存在しますよ！）</p>
+</div>
 
 
 
@@ -16,22 +15,18 @@
     h1{
         font-size:110px;
         font-weight:bold;
-        color:red;
+        color:#ff0000;
         text-align:center;
         margin:40px;
         padding:5px;
     }
-    p {
+    .error {
         font-size:41px;
         font-weight:bolder;
-        color:red;
+        color:#ff0000;
         text-align:center;
         margin:50px;
         padding:15px;
     }
-     
-     body{
-        background-color:#fafad2;
-     }
 </style>
 
