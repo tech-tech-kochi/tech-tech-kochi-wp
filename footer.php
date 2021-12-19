@@ -1,10 +1,10 @@
 <style>
     .footer {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         padding: 60px 0;
    }
-    li {
+    .footer li {
         display: inline;
         margin-right: 20px;
     }
@@ -28,14 +28,15 @@
     }
    .logo {
        padding: 15px 30px 0 0;
+       font-weight:bold;
    }
    .copyright-text {
        font-size: 10px;
        padding-top: 20px;
    }
 </style>
-    <footer class="footer bg-wht">
-        <div class="flex">
+    <footer class="footer bg-gry">
+        <div class="container flex">
             <a href="<?php echo home_url( '/' ); ?>" class="logo">TECH-TECH KOCHI</a>
             <!-- ナビメニューを表示 -->
             <?php wp_nav_menu(
@@ -44,8 +45,10 @@
                     'menu_class' => 'nav navbar-nav fs-14px',
                 )
             ); ?>
+            
         </div>
-        <p class="copyright-text">Copyright © 2021 TECH-TECH KOCHI All Rights Reserved.</p>
+        <p class="copyright-text container">Copyright © 2021 TECH-TECH KOCHI All Rights Reserved.</p>
+        
     </footer>
     <?php wp_footer() ?>
 </body>

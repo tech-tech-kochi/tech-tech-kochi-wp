@@ -4,18 +4,16 @@ function read_css() {
     wp_enqueue_style('destyle', get_template_directory_uri().'/css/destyle.css' );
     wp_enqueue_style('style', get_template_directory_uri().'/style.css', array('destyle') );
 
-    // 投稿・お知らせ（single.php）用のCSS
-    if(is_single()) {
-        wp_enqueue_style('single', get_template_directory_uri().'/css/single.css' );
-    }
-    // カスタム投稿・メンバー（single-member.php）用のCSS
-    if(is_single("MEMBER")) {
-        wp_enqueue_style('single', get_template_directory_uri().'/css/single-member.css' );
-    }
     // コミュニティについてのページ（page-about.php用）
     if (is_page("ABOUT")) {
         wp_enqueue_style( 'page-about', get_template_directory_uri() . '/css/page-about.css', array('destyle') );
     }
+
+    // 投稿・お知らせ（single.php）用のCSS
+    if(is_single()) {
+        wp_enqueue_style('single', get_template_directory_uri().'/css/single.css' );
+    }
+
     // 活動内容ページ（page-activity.php用）
     if (is_page("ACTIVITY")) {
         wp_enqueue_style( 'page-activity', get_template_directory_uri() . '/css/page-activity.css', array('destyle') );
@@ -25,11 +23,9 @@ function read_css() {
         wp_enqueue_style( 'page-contact', get_template_directory_uri() . '/css/page-contact.css', array('destyle') );
     }
 
-
-
-    // 特定のページに読み込ませるCSS
-    // if (is_page('ページ名')) {
-    //     wp_enqueue_style( 'sample', get_template_directory_uri() . '/css/sample.css', array('destyle') );
+    // カスタム投稿・メンバー（single-member.php）用のCSS
+    // if(is_single("MEMBER")) {
+    //     wp_enqueue_style('single', get_template_directory_uri().'/css/single-member.css' );
     // }
 }
 
@@ -84,7 +80,7 @@ function post_has_archive( $args, $post_type ) {
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 // 画面上のmargin-top消す
-// add_filter("show_admin_bar", "__return_false");
+add_filter("show_admin_bar", "__return_false");
 
   
   // カスタムヘッダー

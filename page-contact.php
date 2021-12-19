@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: お問い合わせ
+Template Name: CONTACT
 */
 ?>
 
@@ -8,9 +8,18 @@ Template Name: お問い合わせ
 <main class="main">
     <div class="page-title-container">
         <h2 class="page-title fc-wht fs-32px"><?php the_title(); ?></h2>
+        
     </div>
+        
     <div class="container">
-        <div class="form">
+        <?php the_content(); ?>
+
+
+
+
+
+
+        <!-- <div class="form">
             <div class="form-item flex">
                 <p class="form-item-label"><span class="form-item-label-required fc-wht">必須</span>氏名</p>
                 <input type="text" class="form-item-input" placeholder="例）テクテク太郎">
@@ -48,7 +57,7 @@ Template Name: お問い合わせ
             </div>
             <input type="submit" class="form-btn" value="送信する >>">
         </div>
-
+ -->
     </div>
 
 
