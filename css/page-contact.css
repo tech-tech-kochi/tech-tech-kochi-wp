@@ -16,9 +16,9 @@
     width: 100%;
     align-items: center;
 }
-.form-item:nth-child(5) {
+/* .form-item:nth-child(5) {
     border-bottom: 1px solid #ddd;
-}
+} */
 .form-item-label {
     width: 100%;
     max-width: 248px;
@@ -26,10 +26,10 @@
     font-weight: bold;
     font-size: 1.1em;
 }
-.form-item-label.isMsg {
+/* .form-item-label.isMsg {
     margin-top: 8px;
     margin-bottom: auto;
-}
+} */
 .form-item-label-required {
     border-radius: 6px;
     margin-right: 18px;

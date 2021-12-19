@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 活動内容
+Template Name: ACTIVITY
 */
 ?>
 <?php get_header(); ?>
@@ -9,7 +9,10 @@ Template Name: 活動内容
         <p class="page-title fc-wht fs-32px"><?php the_title(); ?></p>
     </div>
     <div class="content-container">
-        <?php the_content(); ?>
+
+    
+        
+
     </div>
 </div>
 <?php get_footer(); ?>
