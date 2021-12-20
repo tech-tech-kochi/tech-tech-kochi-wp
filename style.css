@@ -7,7 +7,6 @@
 
 
 /* 全体のページに適用されるCSS */
-
 html {
     /* このサイズが基準　フォントサイズをemで指定する */
     font-size: 16px;
@@ -16,6 +15,17 @@ html {
 body {
     min-width:960px;
 }
+@media screen and (max-width:640px) {
+    html {
+        min-width: 0;
+        font-size: 14px;
+    }
+    body {
+        min-width: 0;
+        max-width: 640px;
+    }
+}
+
 .main {
     width: 100%;
     margin : 0 auto;
@@ -24,9 +34,18 @@ body {
     width:960px;
     margin: 0 auto;
 }
+@media screen and (max-width:640px) {
+    .container {
+        width: 100%;
+    }
+}
 .flex {
     display:flex;
 }
+
+
+
+
 
 
 /* 固定ページ共通 */
@@ -60,17 +79,18 @@ body {
 .menu-pc_menu-container{
     padding: 15px 0;
 }
+@media screen and (max-width:640px) {
+    .menu-pc_menu-container {
+        display: none;
+    }
+}
 .menu-item {
     display: inline;
     margin-right: 20px;
-}
-.menu-item {
     position: relative;
     font-weight: bold;
-    /* border: #333 2px solid;
-    border-radius: 25px;
-    padding: 5px 15px; */
 }
+
 .menu-item::after {
     position: absolute;
     bottom: -4px;
@@ -109,12 +129,19 @@ body {
 
 
 /* アイキャッチ */
-.hero-img {
-    width: 100%;
-}
-.hero-img img{
+.top-img{
     width: 100%;
     margin-bottom: 100px;
+}
+@media screen and (max-width:640px) {
+    .top-img {
+        margin-top: 50px;
+    }
+}
+
+/* トップコンテンツ共通 */
+.main-contents {
+    margin-bottom: 150px;
 }
 
 /* 見出し */
@@ -124,9 +151,25 @@ body {
     font-weight:bold;
     border-bottom: solid 1px #333;
 }
+@media screen and (max-width:640px) {
+    .contents-title {
+        font-size: 2em;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 /* 見出しのアイコン */
 .contents-title img {
     width: 55px;
+}
+@media screen and (max-width:640px) {
+    .contents-title img {
+        display: none;
+    }
 }
 .icon {
     float: right;
@@ -147,6 +190,10 @@ body {
 .icon5 {
     float: right;
 }
+.clearfix {
+    clear: both;
+}
+
 
 /* ボタン */
 .button-wrapper {
@@ -187,17 +234,22 @@ body {
 
 
 
-/* トップコンテンツ共通 */
-.main-contents {
-    margin-bottom: 150px;
-}
+
+
 
 /* ABOUT */
 .main-about p{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 40px;
     clear: both;
+}
+@media screen and (max-width:640px) {
+    .main-about p {
+        width: 85%;
+        margin: 0 auto;
+
+    }
 }
 
 /* NEWS */
@@ -209,6 +261,20 @@ body {
 .date {
     margin-right: 50px;
 }
+@media screen and (max-width:640px) {
+    .news-wrapper {
+        width: 90%;
+        font-size: 1em;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+    .date {
+        padding-bottom: 20px;
+    }
+}
+
+
 .news-wrapper a {
     position: relative;
 }

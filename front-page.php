@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
 <main class="main">
-    <div class="hero-img">
-        <img src="<?php bloginfo('template_directory'); ?>/img/top-img.png" alt="トップ画像">
-    </div>
+    <img class="top-img" src="<?php bloginfo('template_directory'); ?>/img/top-img.png" alt="トップ画像">
+    
 
     <div class="container">
 
         <!-- ABOUT -->
         <div class="main-about main-contents">
             <h2 class="contents-title ">ABOUT<img class="icon" src="<?php bloginfo('template_directory'); ?>/img/techtech-icon.png" alt=""></h2>
-            <p>TECH-TECH KOCHI（テクテク高知）は、プログラミング学習の継続を目的としたコミュニティです。<br>
-                「1人ではなかなかモチベーションが維持できない・・・」「相談し合える仲間がほしい！」<br>
+            <p class="clearfix">TECH-TECH KOCHI（テクテク高知）は、プログラミング学習の継続を目的としたコミュニティです。<br>
+                「1人ではなかなかモチベーションが維持できない・・・」<br>
+                「相談し合える仲間がほしい！」<br>
                 そういった方々が楽しく学習を続けられるような場所を作りたいと思い、このコミュニティを立ち上げました。
                 現在のメンバー数は約40名ですが、今後はもっと人数を増やしていく予定です。</p>    
             <div class="button-wrapper">
@@ -24,7 +24,7 @@
             <h2 class="contents-title ">NEWS<img class="icon2" src="<?php bloginfo('template_directory'); ?>/img/techtech-icon.png" alt=""></h2>
             <!-- 投稿記事を表示 -->
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="news-wrapper flex">
+            <div class="news-wrapper flex clearfix">
                 <div class="date"><?php the_time('Y年m月d日'); ?></div>
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </div>
