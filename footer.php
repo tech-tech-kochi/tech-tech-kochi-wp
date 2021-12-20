@@ -8,6 +8,11 @@
         display: inline;
         margin-right: 20px;
     }
+    @media screen and (max-width:1025px) {
+        .footer li {
+            display:none;
+        }
+}
     .menu-item  {
         position: relative;
     }
