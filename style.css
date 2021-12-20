@@ -136,6 +136,7 @@ body {
 @media screen and (max-width:640px) {
     .top-img {
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -319,11 +320,25 @@ body {
     width: 200px;
     border-radius: 50%;
     margin: 0 20px;
+}
+@media screen and (max-width:640px) {
+    .main-member-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .main-member-wrapper img {
+        margin: 30px 50px;
 
+    }
 }
 
 /* CONTACT */
 .main-contact p{
     font-weight: bold;
 }
-
+@media screen and (max-width:640px) {
+    .main-contact p {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
