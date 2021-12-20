@@ -27,7 +27,7 @@
 <?php get_header(); ?>
 <main class="main">
     <div class="page-title-container">  
-        <p class="page-title fc-wht fs-32px">MEMBER</p>
+        <h1 class="page-title fc-wht fs-32px">MEMBER</h1>
     </div>
     <div class="content content-container flex">
         <?php $args = array(

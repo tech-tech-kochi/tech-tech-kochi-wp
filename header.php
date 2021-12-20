@@ -10,9 +10,8 @@
 <body <?php body_class(); ?>>
 
     <header class="header flex bg-yel">
-        <a href="<?php echo home_url( '/' ); ?>">
-            <img src="<?php header_image(); ?>" class="logo-img">
-        </a>
+        <h1><a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" class="logo-img"></a></h1>
+
         <!-- ナビメニューを表示 -->
         <?php wp_nav_menu(
             array(

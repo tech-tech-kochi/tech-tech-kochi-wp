@@ -6,7 +6,7 @@ Template Name: ABOUT
 <?php get_header(); ?>
 <div class="main">
     <div class="page-title-container">
-        <p class="page-title fc-wht fs-32px"><?php the_title(); ?></p>
+        <h1 class="page-title fc-wht fs-32px"><?php the_title(); ?></h1>
     </div>
     <div class="container">
         
