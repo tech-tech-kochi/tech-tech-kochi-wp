@@ -14,7 +14,7 @@
                 「1人ではなかなかモチベーションが維持できない・・・」「相談し合える仲間がほしい！」<br>
                 そういった方々が楽しく学習を続けられるような場所を作りたいと思い、このコミュニティを立ち上げました。
                 現在のメンバー数は約40名ですが、今後はもっと人数を増やしていく予定です。</p>    
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/about/">>> Read more</a>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </div>
             <?php endwhile; endif; ?>
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/news/">>> Read more</a>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/activity/">>> Read more</a>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
                 <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
             </div>
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/member/">>> Read more</a>
             </div>
         </div>

@@ -24,7 +24,7 @@ Template Name: ABOUT
                 少しでも興味がある方は、ぜひ問い合わせページからお気軽にご連絡ください。<br>
                 </p>
             </div>
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/contact/">>> お問い合わせはこちら</a>
             </div>
         </div>
@@ -48,9 +48,9 @@ Template Name: ABOUT
                 Slackとは、ビジネスでよく使われているチャットツールです。<br>
                 <span class="under-line">プログラミングに関する質問や学習報告をはじめ、プライベートな内容や雑談も投稿されています。</span><br>
                 一部のメンバーは、バーチャルオフィス「Gather Town」に集まり、夜な夜な作業をしています。<br>
-                まだまだ運営体制が整っていませんが、今後は勉強会やオフ会もどんどん企画していきたいです。</p>
+                まだまだ運営体制が整っていませんが、今後は勉強会やオフ会もどんどん企画していく予定です。</p>
             </div>
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/activity/">>> 活動内容はこちら</a>
             </div>
         </div>
@@ -71,8 +71,8 @@ Template Name: ABOUT
                 <p>このコミュニティーに在籍している人の多くは、高知県が主催するプログラミング講座の卒業生です。<br>
                 今後は卒業生以外の方でも参加できるオープンなコミュニティーにしていきたいと考えています。</p>
             </div>
-            <div class="read-more">
-                <a class="button" href="<?php bloginfo('url'); ?>/activity/">>> メンバーページはこちら</a>
+            <div class="button-wrapper">
+                <a class="button" href="<?php bloginfo('url'); ?>/member/">>> メンバーページはこちら</a>
             </div>
         </div>
 
@@ -83,8 +83,7 @@ Template Name: ABOUT
             </div>
 
             <div class="text-wrapper">
-                <p>コミュニティの運営者は二人のはちきんです。<br>
-
+                <p>コミュニティの運営者は二人のはちきん（武田・味元）です。<br>
                 私たちは高知県が主催する４ヶ月間のプログラミング講座を受講し、県内のIT企業に転職しました。<br>
                 しかし、プログラミングの技術はまだまだひよっこ。<br>
                 卒業後も受講生同士で、連絡を取り合いながら、勉強会を開催したりと学習を続けていました。<br>
@@ -110,7 +109,7 @@ Template Name: ABOUT
                 <span class="signature">コミュニティ運営者　武田・味元</span><br>
                 </p>
             </div>
-            <div class="read-more">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/contact/">>> お問い合わせはこちら</a>
             </div>
         </div>
