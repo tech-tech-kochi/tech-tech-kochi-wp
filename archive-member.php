@@ -1,35 +1,9 @@
-<style>
-    .item {
-        text-align: center;
-    }
-    .content-container {
-        padding: 100px 50px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .member-container {
-        width: 300px;
-        word-wrap: break-word;
-        margin: 20px;
-        text-align: center;
-    }
-    .member-img img {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-        object-fit:cover;
-    }
-    .member-name {
-        margin: 20px 0 10px 0;
-    }
-    
-</style>
 <?php get_header(); ?>
 <main class="main">
     <div class="page-title-container">  
-        <h1 class="page-title fc-wht fs-32px">MEMBER</h1>
+        <h1 class="page-title fs-32px">MEMBER</h1>
     </div>
-    <div class="content content-container flex">
+    <div class="content ar-member-content-container flex">
         <?php $args = array(
         'post_type' => 'member', //カスタム投稿で作成した投稿タイプ
         'posts_per_page' => -1,
@@ -41,7 +15,7 @@
         <div class="member-container"> 
             <div class="member-img"><?php the_post_thumbnail(); ?></div>
             <p class="member-name fs-20px"><?php the_title();?></p>
-            <p><?php the_excerpt(); ?></p>
+            <p><?php the_category(); ?></p>
         </div>
         </a>
         <?php endforeach; ?>

@@ -1,24 +1,9 @@
-<style>
-    .content-container {
-        width: 60%;
-        margin: 100px auto;
-    }
-    .single-post-container {
-        margin: 50px 0;
-    }
-    .date-box {
-        margin-right: 20px;
-    }
-    .title-box {
-        margin-top: 10px;
-    }
-</style>
 <?php get_header(); ?>
 <div class="main">
     <div class="page-title-container">
-        <p class="page-title fc-wht fs-32px">NEWS</p>
+        <p class="page-title fs-32px">NEWS</p>
     </div>
-    <div class="content-container">
+    <div class="ar-news-content-container">
         <?php
         global $post;
         $args = array( 'posts_per_page' => 8 );
@@ -26,17 +11,13 @@
         foreach( $myposts as $post ) {
         setup_postdata($post);
         ?>
-        <div class="single-post-container">
-            <div class="flex">
-                <div class="date-box">
-                    <?php the_time('Y.m.d') ?>    
+        <div class="news-container">
+            <div class="news-wrapper clearfix flex">
+                <div class="news-category-date">
+                    <div class="news-category"><?php the_category() ?></div>
+                    <div class="news-date"><?php the_time('Y年m月d日'); ?></div>
                 </div>
-                <div class="category-box fs-14px">
-                    <?php the_category(',') ?>
-                </div>
-            </div>
-            <div class="title-box">
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>" class="news-title"><?php the_title(); ?></a>
             </div>
         </div>
         <?php

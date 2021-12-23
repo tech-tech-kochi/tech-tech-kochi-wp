@@ -19,4 +19,28 @@
                 'menu_class' => 'nav navbar-nav',
             )
         ); ?>
+        <!-- ハンバーガーメニューを表示 -->
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/news/">NEWS</a>
+                    </li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/activity/">ACTIVITY</a>
+                    </li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/member/">MEMBER</a>
+                    </li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/contact/">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>

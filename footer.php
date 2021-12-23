@@ -40,7 +40,7 @@
        padding-top: 20px;
    }
 </style>
-    <footer class="footer bg-gry">
+    <footer class="footer bg-yel">
         <div class="container flex">
             <a href="<?php echo home_url( '/' ); ?>" class="logo">TECH-TECH KOCHI</a>
             <!-- ナビメニューを表示 -->
