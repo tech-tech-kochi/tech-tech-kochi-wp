@@ -64,3 +64,13 @@
 .signature {
     font-weight: bold;
 }
+
+@media screen and (max-width:640px) {
+    .block {
+        margin-top: 30px;
+        margin-bottom: 70px;
+        font-size: 1em;
+        line-height: 40px;
+        width: 100%;
+    }
+}
