@@ -52,7 +52,7 @@
             <?php wp_nav_menu(
                 array(
                     'menu'  => 'pc_menu',
-                    'menu_class' => 'nav navbar-nav fs-14px',
+                    'menu_class' => 'nav navbar-nav fs-14px menu-ul',
                 )
             ); ?>
             

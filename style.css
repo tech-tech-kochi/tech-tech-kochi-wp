@@ -235,7 +235,7 @@ body {
     color:#eee;
     font-size: 150px;
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 120px;
     animation: fadeIn 2s linear;
     animation-fill-mode: both;
     mix-blend-mode: hard-light;
@@ -254,7 +254,7 @@ body {
 @media screen and (max-width:640px) {
     .top-design p  {
         color:#eee;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
         padding-top:70px;
         animation: fadeIn 2s linear;
@@ -538,7 +538,7 @@ body {
     border-radius: 50%;
     margin: 0 20px;
     justify-content: space-between;
-    box-shadow: 0px 2px 20px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 20%);
 }
 @media screen and (max-width:640px) {
     .main-member-wrapper {
@@ -563,7 +563,7 @@ body {
     text-align: center;
     border-radius: 50px;
     background-color: #eee;
-    box-shadow: 0px 2px 20px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 20%);
 }
 .main-contact .button-wrapper {
     text-align: center;
