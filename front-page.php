@@ -12,22 +12,19 @@
 
         <!-- ABOUT -->
         <div class="main-about main-contents">
-                <div class="about-container">
-                    <div class="content-container">
-                        <div class="title-walk">
-                            <img class="icon" src="<?php bloginfo('template_directory'); ?>/img/techtech-icon1.png" alt="">
-                            <h2 class="contents-title">ABOUT</h2>
-                        </div>
-                        <p class="clearfix">TECH-TECH KOCHI（テクテク高知）は、プログラミング学習の継続を目的としたコミュニティです。<br>
-                            「1人ではなかなかモチベーションが維持できない・・・」<br>
-                            「相談し合える仲間がほしい！」<br>
-                            そういった方々が楽しく学習を続けられるような場所を作りたいと思い、このコミュニティを立ち上げました。<br>
-                            現在のメンバー数は約40名ですが、今後はもっと人数を増やしていく予定です。
-                        </p> 
+                <div class="content-container">
+                    <div class="title-walk">
+                        <img class="icon" src="<?php bloginfo('template_directory'); ?>/img/techtech-icon1.png" alt="">
+                        <h2 class="contents-title">ABOUT</h2>
                     </div>
-                    <div class="about-img"></div> 
+                    <p class="clearfix">TECH-TECH KOCHI（テクテク高知）は、プログラミング学習の継続を目的としたコミュニティです。<br>
+                        「1人ではなかなかモチベーションが維持できない・・・」<br>
+                        「相談し合える仲間がほしい！」<br>
+                        そういった方々が楽しく学習を続けられるような場所を作りたいと思い、このコミュニティを立ち上げました。<br>
+                        現在のメンバー数は約40名ですが、今後はもっと人数を増やしていく予定です。
+                    </p> 
                 </div>
-            <div class="button-wrapper-about">
+            <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/about/">>> コミュニティについて</a>
             </div>
         </div>

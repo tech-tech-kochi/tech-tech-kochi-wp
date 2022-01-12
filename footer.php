@@ -12,6 +12,11 @@
         .footer li {
             display:none;
         }
+        .footer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0;
+   }
 }
     .menu-item  {
         position: relative;
