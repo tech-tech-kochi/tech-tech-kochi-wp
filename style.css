@@ -75,7 +75,7 @@ body {
     top: 0;/*画面一番上で固定*/
     width: 100%;/*ヘッダーが横幅いっぱいになるように指定*/
 }
-.menu-pc_menu-container{
+.menu-ul{
     padding: 15px 0;
 }
 .menu-item {
@@ -516,7 +516,7 @@ body {
     .activity-contents {
         border: solid 1px #eeeeee;
         border-radius: 30px;
-        width: 70%;
+        width: 85%;
         margin: 20px auto;
         box-shadow: 0px 2px 20px rgb(0 0 0 / 10%);
     }
@@ -538,6 +538,7 @@ body {
     border-radius: 50%;
     margin: 0 20px;
     justify-content: space-between;
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 30%);
 }
 @media screen and (max-width:640px) {
     .main-member-wrapper {
@@ -573,8 +574,9 @@ body {
 }
 @media screen and (max-width:640px) {
     .main-contact {
-        margin: 70px 0;
-        padding: 30px;
+        width: 90%;
+        margin: 70px auto;
+        padding: 30px 20px;
         text-align: center;
         border-radius: 50px;
         background-color: #eee;
@@ -672,30 +674,43 @@ body {
     text-align: right;
 }
 .single-thumb img {
-    width: 80%;
+    width: 300px;
     height: auto;
 }
 .single-name {
     margin: 30px 0;
 }
-.single-text {
+.member-single-text {
+    margin: 50px 0 70px 0;
     word-wrap: break-word;
 }
 @media screen and (max-width:640px) {
     .main_wrap {
         width: 90%;
-        padding: 100px 0px;
+        height: 300px;
+        padding: 100px 0px 50px 0;
         justify-content: space-between;
     }
     .member-content-container {
-        width: 90%;
+        width: 60%;
+        height: 200px;
         padding: 0;
     }
+    .single-thumb {
+        text-align: center;
+        margin-left: 10px;
+    }
     .single-thumb img {
+        width: 100px;
         height: auto;
+        border:#333 solid 1px;
     }
     .single-name {
-        margin: 10px 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    .member-single-text {
+        margin: 20px 0 0 0;
     }
 }
 

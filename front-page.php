@@ -92,10 +92,18 @@
                 <h2 class="contents-title ">MEMBER</h2>
             </div>
             <div class="main-member-wrapper flex">
-                <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
-                <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
-                <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
-                <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
+                <a href="https://tech-tech-kochi.com/member/takeda-keiko/">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/member/takeda.jpg" alt="">
+                </a>
+                <a href="https://tech-tech-kochi.com/member/mimoto-michiyo/">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/member/mimoto.png" alt="">
+                    </a>
+                <a href="https://tech-tech-kochi.com/member/sugiuchi-soya/">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/member/sugiuchi.png" alt="">
+                </a>
+                <a href="https://tech-tech-kochi.com/member/nakaoka-moe/">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
+                </a>
             </div>
             <div class="button-wrapper">
                 <a class="button" href="<?php bloginfo('url'); ?>/member/">>> メンバーを見る</a>

@@ -16,7 +16,7 @@
         <?php wp_nav_menu(
             array(
                 'menu'  => 'pc_menu',
-                'menu_class' => 'nav navbar-nav',
+                'menu_class' => 'nav navbar-nav menu-ul',
             )
         ); ?>
         <!-- ハンバーガーメニューを表示 -->
