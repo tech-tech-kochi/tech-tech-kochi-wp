@@ -102,7 +102,7 @@
                     <img src="<?php bloginfo('template_directory'); ?>/img/member/sugiuchi.png" alt="">
                 </a>
                 <a href="https://tech-tech-kochi.com/member/nakaoka-moe/">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/no-image.jpeg" alt="">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/member/nakaoka.jpg" alt="">
                 </a>
             </div>
             <div class="button-wrapper">
