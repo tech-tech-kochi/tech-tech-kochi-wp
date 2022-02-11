@@ -691,9 +691,13 @@ body {
     margin: 50px 0 20px 0;
     word-wrap: break-word;
 }
-.tag-title {
+.member-single-tag p {
+    display: flex;
+}
+.member-single-tag p {
+    display: inline;
     font-size: 14px;
-    color: #aaa; 
+    color: rgb(128, 123, 123); 
 }
 @media screen and (max-width:640px) {
     .main_wrap {
