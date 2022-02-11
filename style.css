@@ -253,13 +253,7 @@ body {
 }
 @media screen and (max-width:640px) {
     .top-design p  {
-        color:#eee;
-        font-size: 50px;
-        font-weight: bold;
-        padding-top:70px;
-        animation: fadeIn 2s linear;
-        animation-fill-mode: both;
-        mix-blend-mode: hard-light;
+        display:none;
     }
 }
 @keyframes fadeIn{
