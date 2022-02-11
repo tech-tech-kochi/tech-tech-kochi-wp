@@ -14,6 +14,14 @@ Template Name: メンバー詳細
                     <div class="single-name fs-32px"><?php the_title(); ?></div>
                     <div class="member-single-text"><?php the_content();?></div>
                     <div class="member-single-tag"><?php the_tags(); ?></div>
+                    <div classs="member-single-tag">
+                        <p class="tag-title">#学習した言語</p>
+                        <?php $terms = get_the_terms($post->ID,'members_category');
+                        foreach( $terms as $term ) {
+                            echo $term->name.'　';
+                        }
+                        ?>
+                    </div>
                 </div>
                 <div class="single-thumb">
                     <?php if(has_post_thumbnail()) { the_post_thumbnail(); } ?>

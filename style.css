@@ -688,8 +688,12 @@ body {
     margin: 20px 0;
 }
 .member-single-text {
-    margin: 50px 0 70px 0;
+    margin: 50px 0 20px 0;
     word-wrap: break-word;
+}
+.tag-title {
+    font-size: 14px;
+    color: #aaa; 
 }
 @media screen and (max-width:640px) {
     .main_wrap {
@@ -721,7 +725,7 @@ body {
         font-size: 20px;
     }
     .member-single-text {
-        margin: 20px 0 0 0;
+        margin: 20px 0;
     }
 }
 
