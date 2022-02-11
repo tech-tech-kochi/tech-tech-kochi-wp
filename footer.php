@@ -2,7 +2,7 @@
     .footer {
         width: 100%;
         margin: 0 auto;
-        padding: 60px 0;
+        padding: 40px 0;
    }
     .footer li {
         display: inline;
