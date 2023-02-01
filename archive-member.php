@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: ARCHIVE_MEMBER
+*/
+?>
 <?php get_header(); ?>
 <main class="main">
     <div class="page-title-container">  

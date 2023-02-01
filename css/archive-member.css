@@ -1,0 +1,48 @@
+/* MEMBER - 一覧 */
+
+.item {
+    text-align: center;
+}
+.ar-member-content-container {
+    padding: 80px 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.member-container {
+    width: 300px;
+    word-wrap: break-word;
+    margin: 20px;
+    text-align: center;
+}
+.member-img img {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.member-name {
+    margin: 20px 0 10px 0;
+}
+@media screen and (max-width:640px) {
+    .ar-member-content-container {
+        padding: 40px 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        min-height: 500px;
+    }
+    .member-container {
+        width: 100px;
+        word-wrap: break-word;
+        margin: 20px;
+        text-align: center;
+    }
+    .member-img img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit:cover;
+    }
+    .member-name {
+        margin: 10px 0 10px 0;
+    }
+}

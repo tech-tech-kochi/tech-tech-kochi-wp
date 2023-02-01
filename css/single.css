@@ -1,6 +1,38 @@
-/* お知らせ用のCSSをここに記述 */
-/* 一覧（アーカイブ）画面ではなく、お知らせの詳細ページのことです。 */
+/* NEWS　個別ページ用CSS */
 
-
-
-
+.si-news-content-container {
+    width: 80%;
+    margin: 0 auto 80px auto;
+}
+.single-post-container {
+    margin: 170px 0 100px;
+}
+.single-date {
+    margin: 10px 20px 10px 0;
+}
+.single-title {
+    margin: 20px 0;
+    font-size: 32px;
+}
+.single-text {
+    margin: 50px 0 70px 0;
+}
+.back-button {
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+@media screen and (max-width:640px) {
+    .si-news-content-container {
+        width: 80%;
+        margin: 0 auto 50px auto;
+        min-height: 600px;
+    }
+    .single-post-container {
+        margin: 80px 0 50px;
+    }
+    .single-title {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+}

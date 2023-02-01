@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: メンバー詳細
+Template Name: SINGLE_MEMBER
 */
 ?>
 <?php get_header(); ?>
