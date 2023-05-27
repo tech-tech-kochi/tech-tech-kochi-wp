@@ -89,6 +89,6 @@ add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 // 画面上のmargin-top消す
 add_filter("show_admin_bar", "__return_false");
 
-  
+
 // カスタムヘッダー
-add_theme_support( 'custom-header', $custom_header );
+add_theme_support( 'custom-header' );
